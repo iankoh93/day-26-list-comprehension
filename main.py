@@ -28,6 +28,5 @@ nato_dict = {row.letter: row.code for (index, row) in nato_data_frame.iterrows()
 
 # Create a list of the phonetic code words from a word that the user inputs.
 word_list = list(input("Enter a word: ").upper())
-print(word_list)
 code_list = [nato_dict[letter] for letter in word_list]
 print(code_list)
